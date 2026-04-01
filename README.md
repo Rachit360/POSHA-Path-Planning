@@ -71,7 +71,13 @@ All coordinates extracted from `POSHA_Robotics_Assignment.step` via FreeCAD Pyth
 4. DISPENSE  — Lower to pan; tilt to pour spice
 5. RETURN    — Return pod to exact rack position
 ```
+## Visualizations
 
+### Task 1 — Macro Dispense Path
+![Task 1 Macro Path](task1_macro_path.png)
+
+### Task 2 — Micro Dispense Path
+![Task 2 Micro Path](task2_micro_path.png)
 ---
 
 ## Kinematics
@@ -101,6 +107,9 @@ T_i = | cos(θ)  -sin(θ)cos(α)   sin(θ)sin(α)   a·cos(θ) |
 - Tolerance: 0.1mm
 
 ---
+
+### Arm Configurations at Key Waypoints
+![Arm Configurations](arm_configurations.png)
 
 ## Collision Detection
 
