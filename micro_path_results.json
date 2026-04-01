@@ -1,0 +1,435 @@
+{
+  "task": "Micro Dispense",
+  "sequence_1": {
+    "from": "Pod_1",
+    "to": "Pan_2",
+    "waypoints": [
+      {
+        "name": "HOME",
+        "position": [
+          0.1727,
+          0.4095,
+          0.0396
+        ],
+        "joint_angles_deg": [
+          0.0,
+          17.19,
+          -28.65,
+          0.0,
+          22.92,
+          0.0
+        ],
+        "gripper": "open"
+      },
+      {
+        "name": "STEP1_Align_Above_Pod1",
+        "position": [
+          0.1755,
+          0.7249,
+          1.0415
+        ],
+        "joint_angles_deg": [
+          150.0,
+          179.91,
+          0.0,
+          99.98,
+          69.9,
+          0.0
+        ],
+        "gripper": "open"
+      },
+      {
+        "name": "STEP1b_Pre_Grip_Alignment_Pod1",
+        "position": [
+          0.1755,
+          0.7649,
+          0.9515
+        ],
+        "joint_angles_deg": [
+          150.0,
+          179.91,
+          0.0,
+          99.98,
+          69.9,
+          0.0
+        ],
+        "gripper": "open"
+      },
+      {
+        "name": "STEP2_Grip_Pod1",
+        "position": [
+          0.1755,
+          0.7854,
+          0.9515
+        ],
+        "joint_angles_deg": [
+          150.0,
+          179.91,
+          0.0,
+          99.98,
+          69.9,
+          0.0
+        ],
+        "gripper": "closed"
+      },
+      {
+        "name": "STEP3_Lift_Pod1",
+        "position": [
+          0.1755,
+          0.7249,
+          1.2915
+        ],
+        "joint_angles_deg": [
+          150.0,
+          179.91,
+          0.0,
+          99.98,
+          69.9,
+          0.0
+        ],
+        "gripper": "closed"
+      },
+      {
+        "name": "STEP3b_Transit_Above_Pan2",
+        "position": [
+          0.689,
+          0.6419,
+          1.0903
+        ],
+        "joint_angles_deg": [
+          42.67,
+          72.58,
+          0.0,
+          -99.98,
+          69.9,
+          0.0
+        ],
+        "gripper": "closed"
+      },
+      {
+        "name": "STEP4_Dispense_Pod1_Into_Pan2",
+        "position": [
+          0.689,
+          0.6419,
+          0.8403
+        ],
+        "joint_angles_deg": [
+          150.0,
+          179.91,
+          -170.0,
+          -99.98,
+          69.9,
+          0.0
+        ],
+        "gripper": "closed"
+      },
+      {
+        "name": "STEP5a_Rise_After_Dispense",
+        "position": [
+          0.689,
+          0.6419,
+          1.0903
+        ],
+        "joint_angles_deg": [
+          93.99,
+          123.9,
+          -170.0,
+          -99.98,
+          69.9,
+          0.0
+        ],
+        "gripper": "closed"
+      },
+      {
+        "name": "STEP5b_Return_Above_Rack",
+        "position": [
+          0.1755,
+          0.7249,
+          1.2915
+        ],
+        "joint_angles_deg": [
+          150.0,
+          179.91,
+          0.0,
+          99.98,
+          69.9,
+          0.0
+        ],
+        "gripper": "closed"
+      },
+      {
+        "name": "STEP5c_Return_Pod1_To_Rack",
+        "position": [
+          0.1755,
+          0.7854,
+          0.9515
+        ],
+        "joint_angles_deg": [
+          150.0,
+          179.91,
+          0.0,
+          99.98,
+          69.9,
+          0.0
+        ],
+        "gripper": "open"
+      },
+      {
+        "name": "STEP5d_Retreat_From_Rack",
+        "position": [
+          0.1755,
+          0.7249,
+          1.0415
+        ],
+        "joint_angles_deg": [
+          150.0,
+          179.91,
+          0.0,
+          99.98,
+          69.9,
+          0.0
+        ],
+        "gripper": "open"
+      },
+      {
+        "name": "HOME_RETURN",
+        "position": [
+          0.1727,
+          0.4095,
+          0.0396
+        ],
+        "joint_angles_deg": [
+          0.0,
+          17.19,
+          -28.65,
+          0.0,
+          22.92,
+          0.0
+        ],
+        "gripper": "open"
+      }
+    ],
+    "validation": {
+      "total_waypoints": 12,
+      "joint_limit_violations": [],
+      "collision_warnings": [],
+      "reachability_ok": false
+    }
+  },
+  "sequence_2": {
+    "from": "Pod_19",
+    "to": "Pan_1",
+    "waypoints": [
+      {
+        "name": "HOME",
+        "position": [
+          0.1727,
+          0.4095,
+          0.0396
+        ],
+        "joint_angles_deg": [
+          0.0,
+          17.19,
+          -28.65,
+          0.0,
+          22.92,
+          0.0
+        ],
+        "gripper": "open"
+      },
+      {
+        "name": "STEP1_Align_Above_Pod19",
+        "position": [
+          0.2925,
+          0.7249,
+          1.2835
+        ],
+        "joint_angles_deg": [
+          23.81,
+          53.72,
+          0.0,
+          99.98,
+          69.9,
+          0.0
+        ],
+        "gripper": "open"
+      },
+      {
+        "name": "STEP1b_Pre_Grip_Alignment_Pod19",
+        "position": [
+          0.2925,
+          0.7649,
+          1.1935
+        ],
+        "joint_angles_deg": [
+          16.62,
+          46.53,
+          0.0,
+          99.98,
+          69.9,
+          0.0
+        ],
+        "gripper": "open"
+      },
+      {
+        "name": "STEP2_Grip_Pod19",
+        "position": [
+          0.2925,
+          0.7854,
+          1.1935
+        ],
+        "joint_angles_deg": [
+          15.9,
+          45.81,
+          0.0,
+          99.98,
+          69.9,
+          0.0
+        ],
+        "gripper": "closed"
+      },
+      {
+        "name": "STEP3_Lift_Pod19",
+        "position": [
+          0.2925,
+          0.7249,
+          1.5335
+        ],
+        "joint_angles_deg": [
+          150.0,
+          179.91,
+          0.0,
+          99.98,
+          69.9,
+          0.0
+        ],
+        "gripper": "closed"
+      },
+      {
+        "name": "STEP3b_Transit_Above_Pan1",
+        "position": [
+          0.1879,
+          0.6409,
+          1.0908
+        ],
+        "joint_angles_deg": [
+          150.0,
+          179.91,
+          0.0,
+          99.98,
+          69.9,
+          0.0
+        ],
+        "gripper": "closed"
+      },
+      {
+        "name": "STEP4_Dispense_Pod19_Into_Pan1",
+        "position": [
+          0.1879,
+          0.6409,
+          0.8408
+        ],
+        "joint_angles_deg": [
+          150.0,
+          179.91,
+          0.0,
+          99.98,
+          69.9,
+          0.0
+        ],
+        "gripper": "closed"
+      },
+      {
+        "name": "STEP5a_Rise_After_Dispense",
+        "position": [
+          0.1879,
+          0.6409,
+          1.0908
+        ],
+        "joint_angles_deg": [
+          150.0,
+          179.91,
+          0.0,
+          99.98,
+          69.9,
+          0.0
+        ],
+        "gripper": "closed"
+      },
+      {
+        "name": "STEP5b_Return_Above_Rack",
+        "position": [
+          0.2925,
+          0.7249,
+          1.5335
+        ],
+        "joint_angles_deg": [
+          150.0,
+          179.91,
+          0.0,
+          99.98,
+          69.9,
+          0.0
+        ],
+        "gripper": "closed"
+      },
+      {
+        "name": "STEP5c_Return_Pod19_To_Rack",
+        "position": [
+          0.2925,
+          0.7854,
+          1.1935
+        ],
+        "joint_angles_deg": [
+          150.0,
+          179.91,
+          0.0,
+          99.98,
+          69.9,
+          0.0
+        ],
+        "gripper": "open"
+      },
+      {
+        "name": "STEP5d_Retreat_From_Rack",
+        "position": [
+          0.2925,
+          0.7249,
+          1.2835
+        ],
+        "joint_angles_deg": [
+          150.0,
+          179.91,
+          0.0,
+          99.98,
+          69.9,
+          0.0
+        ],
+        "gripper": "open"
+      },
+      {
+        "name": "HOME_RETURN",
+        "position": [
+          0.1727,
+          0.4095,
+          0.0396
+        ],
+        "joint_angles_deg": [
+          0.0,
+          17.19,
+          -28.65,
+          0.0,
+          22.92,
+          0.0
+        ],
+        "gripper": "open"
+      }
+    ],
+    "validation": {
+      "total_waypoints": 12,
+      "joint_limit_violations": [],
+      "collision_warnings": [],
+      "reachability_ok": false
+    }
+  }
+}

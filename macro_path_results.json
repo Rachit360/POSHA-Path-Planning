@@ -1,0 +1,438 @@
+{
+  "task": "Macro Dispense",
+  "sequence_1": {
+    "from": "Container_5",
+    "to": "Pan_2",
+    "waypoints": [
+      {
+        "name": "HOME",
+        "position": [
+          0.1727,
+          0.4095,
+          0.0396
+        ],
+        "joint_angles_deg": [
+          0.0,
+          17.19,
+          -28.65,
+          0.0,
+          22.92,
+          0.0
+        ],
+        "gripper": "open",
+        "speed_ms": 0.05
+      },
+      {
+        "name": "STEP1_Align_Above_Container5",
+        "position": [
+          0.389,
+          0.4711,
+          0.937
+        ],
+        "joint_angles_deg": [
+          -52.55,
+          97.45,
+          0.0,
+          99.98,
+          69.9,
+          0.0
+        ],
+        "gripper": "open",
+        "speed_ms": 0.08
+      },
+      {
+        "name": "STEP2_Grip_Position_Container5",
+        "position": [
+          0.389,
+          0.4711,
+          0.852
+        ],
+        "joint_angles_deg": [
+          -56.93,
+          93.07,
+          0.0,
+          99.98,
+          69.9,
+          0.0
+        ],
+        "gripper": "closed",
+        "speed_ms": 0.03
+      },
+      {
+        "name": "STEP3a_Lift_Container5",
+        "position": [
+          0.389,
+          0.4711,
+          1.107
+        ],
+        "joint_angles_deg": [
+          150.0,
+          179.91,
+          0.0,
+          99.98,
+          69.9,
+          0.0
+        ],
+        "gripper": "closed",
+        "speed_ms": 0.05
+      },
+      {
+        "name": "STEP3c_Above_Pan2",
+        "position": [
+          0.689,
+          0.6419,
+          1.0903
+        ],
+        "joint_angles_deg": [
+          42.67,
+          72.58,
+          0.0,
+          -99.98,
+          69.9,
+          0.0
+        ],
+        "gripper": "closed",
+        "speed_ms": 0.08
+      },
+      {
+        "name": "STEP4_Dispense_Into_Pan2",
+        "position": [
+          0.689,
+          0.6419,
+          0.8403
+        ],
+        "joint_angles_deg": [
+          150.0,
+          179.91,
+          -170.0,
+          -99.98,
+          69.9,
+          0.0
+        ],
+        "gripper": "closed",
+        "speed_ms": 0.02
+      },
+      {
+        "name": "STEP5a_Return_Lift",
+        "position": [
+          0.689,
+          0.6419,
+          1.0903
+        ],
+        "joint_angles_deg": [
+          93.99,
+          123.9,
+          -170.0,
+          -99.98,
+          69.9,
+          0.0
+        ],
+        "gripper": "closed",
+        "speed_ms": 0.05
+      },
+      {
+        "name": "STEP5b_Back_Above_Container5",
+        "position": [
+          0.389,
+          0.4711,
+          1.107
+        ],
+        "joint_angles_deg": [
+          150.0,
+          179.91,
+          0.0,
+          99.98,
+          69.9,
+          0.0
+        ],
+        "gripper": "closed",
+        "speed_ms": 0.08
+      },
+      {
+        "name": "STEP6_Place_Container5_Back",
+        "position": [
+          0.389,
+          0.4711,
+          0.852
+        ],
+        "joint_angles_deg": [
+          150.0,
+          179.91,
+          0.0,
+          99.98,
+          63.05,
+          0.0
+        ],
+        "gripper": "open",
+        "speed_ms": 0.03
+      },
+      {
+        "name": "HOME_RETURN",
+        "position": [
+          0.1727,
+          0.4095,
+          0.0396
+        ],
+        "joint_angles_deg": [
+          0.0,
+          17.19,
+          -28.65,
+          0.0,
+          22.92,
+          0.0
+        ],
+        "gripper": "open",
+        "speed_ms": 0.08
+      }
+    ],
+    "validation": {
+      "total_waypoints": 10,
+      "joint_limit_violations": [],
+      "collision_warnings": [
+        "STEP4_Dispense_Into_Pan2: near Pan2_rim"
+      ],
+      "reachability_failures": [
+        "STEP1_Align_Above_Container5: pos=(0.389, 0.471, 0.937)",
+        "STEP2_Grip_Position_Container5: pos=(0.389, 0.471, 0.852)",
+        "STEP3a_Lift_Container5: pos=(0.389, 0.471, 1.107)",
+        "STEP3c_Above_Pan2: pos=(0.689, 0.642, 1.090)",
+        "STEP4_Dispense_Into_Pan2: pos=(0.689, 0.642, 0.840)",
+        "STEP5a_Return_Lift: pos=(0.689, 0.642, 1.090)",
+        "STEP5b_Back_Above_Container5: pos=(0.389, 0.471, 1.107)",
+        "STEP6_Place_Container5_Back: pos=(0.389, 0.471, 0.852)"
+      ],
+      "execution_time_estimate": 64.89328724251807
+    }
+  },
+  "sequence_2": {
+    "from": "Container_1",
+    "to": "Pan_1",
+    "waypoints": [
+      {
+        "name": "HOME",
+        "position": [
+          0.1727,
+          0.4095,
+          0.0396
+        ],
+        "joint_angles_deg": [
+          0.0,
+          17.19,
+          -28.65,
+          0.0,
+          22.92,
+          0.0
+        ],
+        "gripper": "open",
+        "speed_ms": 0.05
+      },
+      {
+        "name": "STEP1_Align_Above_Container1",
+        "position": [
+          0.3036,
+          0.6275,
+          0.9376
+        ],
+        "joint_angles_deg": [
+          150.0,
+          179.91,
+          0.0,
+          99.98,
+          69.9,
+          0.0
+        ],
+        "gripper": "open",
+        "speed_ms": 0.08
+      },
+      {
+        "name": "STEP2_Grip_Position_Container1",
+        "position": [
+          0.3036,
+          0.6275,
+          0.8526
+        ],
+        "joint_angles_deg": [
+          150.0,
+          179.91,
+          0.0,
+          99.98,
+          65.3,
+          0.0
+        ],
+        "gripper": "closed",
+        "speed_ms": 0.03
+      },
+      {
+        "name": "STEP3a_Lift_Container1",
+        "position": [
+          0.3036,
+          0.6275,
+          1.1076
+        ],
+        "joint_angles_deg": [
+          150.0,
+          179.91,
+          0.0,
+          99.98,
+          69.9,
+          0.0
+        ],
+        "gripper": "closed",
+        "speed_ms": 0.05
+      },
+      {
+        "name": "STEP3b_Transit_Detour",
+        "position": [
+          0.2458,
+          0.6342,
+          1.1576
+        ],
+        "joint_angles_deg": [
+          150.0,
+          179.91,
+          0.0,
+          99.98,
+          69.9,
+          0.0
+        ],
+        "gripper": "closed",
+        "speed_ms": 0.08
+      },
+      {
+        "name": "STEP3c_Above_Pan1",
+        "position": [
+          0.1879,
+          0.6409,
+          1.0908
+        ],
+        "joint_angles_deg": [
+          150.0,
+          179.91,
+          0.0,
+          99.98,
+          69.9,
+          0.0
+        ],
+        "gripper": "closed",
+        "speed_ms": 0.08
+      },
+      {
+        "name": "STEP4_Dispense_Into_Pan1",
+        "position": [
+          0.1879,
+          0.6409,
+          0.8408
+        ],
+        "joint_angles_deg": [
+          150.0,
+          179.91,
+          0.0,
+          99.98,
+          69.9,
+          0.0
+        ],
+        "gripper": "closed",
+        "speed_ms": 0.02
+      },
+      {
+        "name": "STEP5a_Return_Lift",
+        "position": [
+          0.1879,
+          0.6409,
+          1.0908
+        ],
+        "joint_angles_deg": [
+          150.0,
+          179.91,
+          0.0,
+          99.98,
+          69.9,
+          0.0
+        ],
+        "gripper": "closed",
+        "speed_ms": 0.05
+      },
+      {
+        "name": "STEP5b_Back_Above_Container1",
+        "position": [
+          0.3036,
+          0.6275,
+          1.1076
+        ],
+        "joint_angles_deg": [
+          150.0,
+          179.91,
+          0.0,
+          99.98,
+          69.9,
+          0.0
+        ],
+        "gripper": "closed",
+        "speed_ms": 0.08
+      },
+      {
+        "name": "STEP6_Place_Container1_Back",
+        "position": [
+          0.3036,
+          0.6275,
+          0.8526
+        ],
+        "joint_angles_deg": [
+          150.0,
+          179.91,
+          0.0,
+          99.98,
+          65.3,
+          0.0
+        ],
+        "gripper": "open",
+        "speed_ms": 0.03
+      },
+      {
+        "name": "HOME_RETURN",
+        "position": [
+          0.1727,
+          0.4095,
+          0.0396
+        ],
+        "joint_angles_deg": [
+          0.0,
+          17.19,
+          -28.65,
+          0.0,
+          22.92,
+          0.0
+        ],
+        "gripper": "open",
+        "speed_ms": 0.08
+      }
+    ],
+    "validation": {
+      "total_waypoints": 11,
+      "joint_limit_violations": [],
+      "collision_warnings": [
+        "STEP1_Align_Above_Container1: near SpiceRack",
+        "STEP2_Grip_Position_Container1: near Pan1_rim",
+        "STEP3a_Lift_Container1: near SpiceRack",
+        "STEP3b_Transit_Detour: near SpiceRack",
+        "STEP3c_Above_Pan1: near SpiceRack",
+        "STEP4_Dispense_Into_Pan1: near Pan1_rim",
+        "STEP5a_Return_Lift: near SpiceRack",
+        "STEP5b_Back_Above_Container1: near SpiceRack",
+        "STEP6_Place_Container1_Back: near Pan1_rim"
+      ],
+      "reachability_failures": [
+        "STEP1_Align_Above_Container1: pos=(0.304, 0.628, 0.938)",
+        "STEP2_Grip_Position_Container1: pos=(0.304, 0.628, 0.853)",
+        "STEP3a_Lift_Container1: pos=(0.304, 0.628, 1.108)",
+        "STEP3b_Transit_Detour: pos=(0.246, 0.634, 1.158)",
+        "STEP3c_Above_Pan1: pos=(0.188, 0.641, 1.091)",
+        "STEP4_Dispense_Into_Pan1: pos=(0.188, 0.641, 0.841)",
+        "STEP5a_Return_Lift: pos=(0.188, 0.641, 1.091)",
+        "STEP5b_Back_Above_Container1: pos=(0.304, 0.628, 1.108)",
+        "STEP6_Place_Container1_Back: pos=(0.304, 0.628, 0.853)"
+      ],
+      "execution_time_estimate": 58.644589121292356
+    }
+  }
+}
