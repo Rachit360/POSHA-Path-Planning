@@ -1,7 +1,7 @@
 # POSHA Robotics — Path Planning Assignment
 **Robotics Engineering Internship Assignment**  
-**Rachit Trivedi | SRM IST Kattankulathur (ECE + Data Science, 2026)
-**Date: 02 April 2026
+**Rachit Trivedi | SRM IST Kattankulathur (ECE + Data Science, 2026)**
+**Date: 02 April 2026**
 
 ---
 
